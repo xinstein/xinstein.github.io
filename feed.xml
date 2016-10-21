@@ -1,9 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-10-21T22:56:54+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
-</subtitle><entry><title type="html">Hello PostWorld!</title><link href="/jekyll/update/2016/10/21/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Hello PostWorld!" /><published>2016-10-21T21:25:38+08:00</published><updated>2016-10-21T21:25:38+08:00</updated><id>/jekyll/update/2016/10/21/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2016/10/21/welcome-to-jekyll.html">&lt;p&gt;#You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-10-22T01:41:02+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
+</subtitle><entry><title type="html">My pdf note on many things。</title><link href="/jekyll/update/2016/10/21/my-various-notes-on-pdf.html" rel="alternate" type="text/html" title="My pdf note on many things。" /><published>2016-10-21T23:22:10+08:00</published><updated>2016-10-21T23:22:10+08:00</updated><id>/jekyll/update/2016/10/21/my-various-notes-on-pdf</id><content type="html" xml:base="/jekyll/update/2016/10/21/my-various-notes-on-pdf.html">&lt;p&gt;&lt;a href=&quot;/mycontents/Study_Notes.pdf&quot;&gt;这里&lt;/a&gt;是我没事就写点的为了替代翻找演草纸而成的一个note。里头大部分是物理，后来也有了概率和其它什么的。都是用我自己惯用的符号约定和证明思路。非常乱，但是我早晚会整理的。&lt;/p&gt;
 
-&lt;p&gt;#To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;#Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]){&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;what the f**k?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//=&amp;gt; prints 'I love you too' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><summary type="html">这里是我没事就写点的为了替代翻找演草纸而成的一个note。里头大部分是物理，后来也有了概率和其它什么的。都是用我自己惯用的符号约定和证明思路。非常乱，但是我早晚会整理的。</summary></entry><entry><title type="html">Migration On The Way!</title><link href="/jekyll/update/2016/10/21/Migration-on-the-way.html" rel="alternate" type="text/html" title="Migration On The Way!" /><published>2016-10-21T23:02:30+08:00</published><updated>2016-10-21T23:02:30+08:00</updated><id>/jekyll/update/2016/10/21/Migration-on-the-way</id><content type="html" xml:base="/jekyll/update/2016/10/21/Migration-on-the-way.html">&lt;p&gt;I recently plan to migrate all my previous study notes and works, personal thoughts and opinions here.&lt;/p&gt;
+
+&lt;p&gt;业内人士告诉我说写博客可以帮助面试官更好地了解我，我觉得他说得有道理。所以我开始聚合了。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]){&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;what the f**k?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//=&amp;gt; prints 'I love you too' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><summary type="html">I recently plan to migrate all my previous study notes and works, personal thoughts and opinions here.</summary></entry><entry><title type="html">Hello PostWorld!</title><link href="/jekyll/update/2016/10/21/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Hello PostWorld!" /><published>2016-10-21T21:25:38+08:00</published><updated>2016-10-21T21:25:38+08:00</updated><id>/jekyll/update/2016/10/21/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2016/10/21/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
@@ -11,4 +31,80 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">#You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">给物理学家写的CAPM</title><link href="/jekyll/update/2016/03/22/CAPM-for-physicists.html" rel="alternate" type="text/html" title="给物理学家写的CAPM" /><published>2016-03-22T00:12:18+08:00</published><updated>2016-03-22T00:12:18+08:00</updated><id>/jekyll/update/2016/03/22/CAPM-for-physicists</id><content type="html" xml:base="/jekyll/update/2016/03/22/CAPM-for-physicists.html">&lt;p&gt;如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。
+我想要表达的就是，这些金融书上在正文不舍得讲的所谓的“技术附录”的内容，对理论物理的学生来说实在是trivial。&lt;/p&gt;
+
+&lt;p&gt;CAPM is short for Capital Asset Pricing Model, 至于为什么称其为定价模型，我尚不知晓，昨晚参加讨论班的童鞋也不知晓，望过路大神指点迷津。&lt;/p&gt;
+
+&lt;p&gt;CAPM大概有这么几个操作性的&lt;strong&gt;假设&lt;/strong&gt;：
+1、市场各个股票的单期收益率分布是固定不变的，买股票的人不会对收益率分布产生“反作用”而改变它。
+2、只有一种无风险资产（否则便存在明显的套利机会）。
+3、所有有风险资产的单期收益率的协方差矩阵是非退化的（所有有风险资产是独立的）。
+4、单期内不能改变资产持有。&lt;/p&gt;
+
+&lt;p&gt;以上假设都是推导过程中直接要使用的，至于它们和更基本的市场假设之间（市场有效性，所有人都是理性投资者）有什么关系，我们可以讨论讨论。&lt;/p&gt;
+
+&lt;p&gt;另外还有一预处理过程，就是改变资产衡量单位，将无风险资产的收益率调整为零。这并不是额外的假设。&lt;/p&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;接下来是要用到的数学&lt;/h4&gt;
+
+&lt;p&gt;说下符号：
+\(r_i\)：第i种资产的单期收益率，是个随机变量，原则上应该包含世界上所有的有风险资产，如固有资产，股票，衍生产品等；
+\(\bar{r}_i\)：\(r_i\)的平均值，预期收益率(expected rate of return)；
+\(\sigma_{ij}=\langle(r_i-\bar{r}_i)(r_j-\bar{r}_j)\rangle\) ：协方差矩阵，也叫风险矩阵(risk matrix)。&lt;/p&gt;
+
+&lt;p&gt;如果我们用逆变矢量\(\vec{p}\)来描述资产分配，那么这种资产分配的预期收益和风险分别是：
+\(\bar{r}_p=p^i\bar{r}_i\)，\(\sigma^2&lt;em&gt;p=p^ip^j\sigma&lt;/em&gt;{ij}\)&lt;/p&gt;
+
+&lt;p&gt;由于风险矩阵\(\sigma_{ij}\)的非退化性，可以定义它为资产分配空间的欧式度规。那么由\(\bar{r}_p\)的表达式可知，我们可以视\(\bar{\vec{r}}\)为对偶空间（后称协变空间）里的一个协变矢量。我们另外定义一个协变矢量\(\vec{u}=(1,1,1,1,1,\cdots)\)&lt;/p&gt;
+
+&lt;p&gt;接下来定义所谓投资组合(portfolio)：一个满足\(\vec{p}\cdot\vec{u}=p^iu_i=\sum_i p^i=1\)的资产分配，我们称为投资组合。这个意义也非常明确，就是以百分比为单位来衡量的资产分配，被称为投资组合。&lt;/p&gt;
+
+&lt;p&gt;总结一下notation，就是：
+所有投资组合都满足\(\vec{p}\cdot\vec{u}=1\)；
+风险\(\sigma_p=|\vec{p}|\)；
+收益\(r_p=\vec{p}\cdot\vec{r}\)，这是一个随机变量；
+预期收益\(\bar{r}_p=\vec{p}\cdot\bar{\vec{r}}\)。&lt;/p&gt;
+
+&lt;p&gt;注意到由于我们有欧式度规，所有点乘的意义全都没有歧义。&lt;/p&gt;
+
+&lt;p&gt;是不是超简单？&lt;/p&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;以上是将要用到的数学，那么接下来是重要的，金融学的部分：&lt;/h4&gt;
+
+&lt;p&gt;我们研究投资的策略，总是想要达到更大的预期收益和更小的风险，于是
+我们定义Sharpe Ratio：\(s_p=\frac{\bar{r}_p}{\sigma_p}\)，我们称Sharpe Ratio最大的投资组合，为最优投资组合，或市场投资组合。因为此时我们承担的每单位风险给我们带来的预期收益最大。并且，Sharpe Ratio是从风险和预期收益中可构造的唯一无量纲的量，所以其大小有参考意义。&lt;/p&gt;
+
+&lt;p&gt;我们看一下CAPM里\(s_p\)的表达式：
+&lt;script type=&quot;math/tex&quot;&gt;s_p=\frac{\vec{p}\cdot\bar{\vec{r}}}{|\vec{p}|}=|\bar{\vec{r}}|(\hat{p}\cdot\hat{\bar{r}})=|\bar{\vec{r}}|\cos\langle\vec{p},\bar{\vec{r}}\rangle&lt;/script&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;注意\(&lt;/td&gt;
+      &lt;td&gt;\bar{\vec{r}}&lt;/td&gt;
+      &lt;td&gt;\)是市场固有的，我们无法改变，我们能改变的就是矢量\(\vec{p}\)，而Sharpe Ratio却只与其方向有关，且方向与\(\vec{\bar{r}}\)一致时，Sharpe Ratio最大。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;这个优化问题是不是太trivial了。&lt;/p&gt;
+
+&lt;p&gt;令最优投资组合为\(\vec{M}\) (M for Market)，则有\(\vec{M}=\lambda\bar{\vec{r}}\)，又因\(\vec{M}\cdot\vec{u}=\lambda\bar{\vec{r}}\cdot\vec{u}=1\)，故得到\(\lambda=1/(\bar{\vec{r}}\cdot\vec{u})\)。&lt;/p&gt;
+
+&lt;p&gt;所以CAPM里最优投资组合是\(\vec{M}=\frac{1}{\bar{\vec{r}}\cdot\vec{u}}\bar{\vec{r}}\)。&lt;/p&gt;
+
+&lt;p&gt;那么不买最优投资组合的代价是什么呢？&lt;/p&gt;
+
+&lt;p&gt;任一投资组合\(\vec{p}\)可做分解\(\vec{p}=\frac{\vec{p}\cdot\vec{M}}{\vec{M}\cdot\vec{M}}\vec{M}+\vec{\epsilon}\)，其中\(\vec{\epsilon}\cdot\vec{M}=0\)。其收益也可做相应分解\(r_p=\beta_p r_M+\epsilon\)，ring a bell?&lt;/p&gt;
+
+&lt;p&gt;其中\(\beta_p=\frac{\vec{p}\cdot\vec{M}}{\vec{M}\cdot\vec{M}}\)，\(r_M=\vec{M}\cdot\vec{r}\)是市场组合的收益率（市场收益率），\(\epsilon=\vec{\epsilon}\cdot\vec{r}\)便是所谓残差收益，注意到\(\bar{\epsilon}=\vec{\epsilon}\cdot\bar{\vec{r}}\propto\vec{\epsilon}\cdot\vec{M}=0\)，以及\(\mathrm{cov}(r_M,\epsilon)=\vec{M}\cdot\vec{\epsilon}=0\)解释一下就是任意投资组合的收益都可以分解为和市场完全相关与和市场无关（协方差为零，高级距暂不考虑）的两部分。与市场无关的部分是一个Martingale（滥用词汇啦），并且仅有买市场最优组合的时候这部分才等于零。&lt;/p&gt;
+
+&lt;p&gt;所以按照CAPM理论，一个理性的人一定会买市场最优组合，市场上的所有资产也必须按照市场最优组合来分配，所有未按照市场最优组合来投资的人，除却其完全跟随市场的部分之外，在进行一场零和博弈，无故承担额外风险。&lt;/p&gt;
+
+&lt;p&gt;这是非常消极的观点。我个人认为只适用于投资实业的决断，因为实业的利润率受市场资本流动的影响不是很大；相比之下金融市场的不确定因素太多，股价涨跌并不全是背后企业利润率的体现。&lt;/p&gt;
+
+&lt;p&gt;Anyway，和经验公式\(r=\alpha+\beta r_M+\epsilon\)对比可知，CAPM认为对于任何投资组合，\(\alpha\)（除却市场相关部分和零和部分之后的一个固定收益）是等于零的，所以CAPM不建议购买除市场组合之外的任何其它组合。&lt;/p&gt;
+
+&lt;p&gt;欢迎补充，我先吃个午饭去，写着好累，不确定以后还会不会写后续章节。。。&lt;/p&gt;</content><summary type="html">如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。
+我想要表达的就是，这些金融书上在正文不舍得讲的所谓的“技术附录”的内容，对理论物理的学生来说实在是trivial。</summary></entry></feed>

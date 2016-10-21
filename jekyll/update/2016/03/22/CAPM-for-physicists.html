@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>给物理学家写的CAPM</title>
+  <meta name="description" content="如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。 我想要表达的就是，这些金融书上在正文不舍得讲的所谓的“技术附录”的内容，对理论物理的学生来说实在是trivial。">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/jekyll/update/2016/03/22/CAPM-for-physicists.html">
+  <link rel="alternate" type="application/rss+xml" title="Xavier&#39;s Personal Blog" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Xavier&#39;s Personal Blog</a>
+
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">给物理学家写的CAPM</h1>
+    <p class="post-meta"><time datetime="2016-03-22T00:12:18+08:00" itemprop="datePublished">Mar 22, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。
+我想要表达的就是，这些金融书上在正文不舍得讲的所谓的“技术附录”的内容，对理论物理的学生来说实在是trivial。</p>
+
+<p>CAPM is short for Capital Asset Pricing Model, 至于为什么称其为定价模型，我尚不知晓，昨晚参加讨论班的童鞋也不知晓，望过路大神指点迷津。</p>
+
+<p>CAPM大概有这么几个操作性的<strong>假设</strong>：
+1、市场各个股票的单期收益率分布是固定不变的，买股票的人不会对收益率分布产生“反作用”而改变它。
+2、只有一种无风险资产（否则便存在明显的套利机会）。
+3、所有有风险资产的单期收益率的协方差矩阵是非退化的（所有有风险资产是独立的）。
+4、单期内不能改变资产持有。</p>
+
+<p>以上假设都是推导过程中直接要使用的，至于它们和更基本的市场假设之间（市场有效性，所有人都是理性投资者）有什么关系，我们可以讨论讨论。</p>
+
+<p>另外还有一预处理过程，就是改变资产衡量单位，将无风险资产的收益率调整为零。这并不是额外的假设。</p>
+
+<h4 id="section">接下来是要用到的数学</h4>
+
+<p>说下符号：
+\(r_i\)：第i种资产的单期收益率，是个随机变量，原则上应该包含世界上所有的有风险资产，如固有资产，股票，衍生产品等；
+\(\bar{r}_i\)：\(r_i\)的平均值，预期收益率(expected rate of return)；
+\(\sigma_{ij}=\langle(r_i-\bar{r}_i)(r_j-\bar{r}_j)\rangle\) ：协方差矩阵，也叫风险矩阵(risk matrix)。</p>
+
+<p>如果我们用逆变矢量\(\vec{p}\)来描述资产分配，那么这种资产分配的预期收益和风险分别是：
+\(\bar{r}_p=p^i\bar{r}_i\)，\(\sigma^2<em>p=p^ip^j\sigma</em>{ij}\)</p>
+
+<p>由于风险矩阵\(\sigma_{ij}\)的非退化性，可以定义它为资产分配空间的欧式度规。那么由\(\bar{r}_p\)的表达式可知，我们可以视\(\bar{\vec{r}}\)为对偶空间（后称协变空间）里的一个协变矢量。我们另外定义一个协变矢量\(\vec{u}=(1,1,1,1,1,\cdots)\)</p>
+
+<p>接下来定义所谓投资组合(portfolio)：一个满足\(\vec{p}\cdot\vec{u}=p^iu_i=\sum_i p^i=1\)的资产分配，我们称为投资组合。这个意义也非常明确，就是以百分比为单位来衡量的资产分配，被称为投资组合。</p>
+
+<p>总结一下notation，就是：
+所有投资组合都满足\(\vec{p}\cdot\vec{u}=1\)；
+风险\(\sigma_p=|\vec{p}|\)；
+收益\(r_p=\vec{p}\cdot\vec{r}\)，这是一个随机变量；
+预期收益\(\bar{r}_p=\vec{p}\cdot\bar{\vec{r}}\)。</p>
+
+<p>注意到由于我们有欧式度规，所有点乘的意义全都没有歧义。</p>
+
+<p>是不是超简单？</p>
+
+<h4 id="section-1">以上是将要用到的数学，那么接下来是重要的，金融学的部分：</h4>
+
+<p>我们研究投资的策略，总是想要达到更大的预期收益和更小的风险，于是
+我们定义Sharpe Ratio：\(s_p=\frac{\bar{r}_p}{\sigma_p}\)，我们称Sharpe Ratio最大的投资组合，为最优投资组合，或市场投资组合。因为此时我们承担的每单位风险给我们带来的预期收益最大。并且，Sharpe Ratio是从风险和预期收益中可构造的唯一无量纲的量，所以其大小有参考意义。</p>
+
+<p>我们看一下CAPM里\(s_p\)的表达式：
+<script type="math/tex">s_p=\frac{\vec{p}\cdot\bar{\vec{r}}}{|\vec{p}|}=|\bar{\vec{r}}|(\hat{p}\cdot\hat{\bar{r}})=|\bar{\vec{r}}|\cos\langle\vec{p},\bar{\vec{r}}\rangle</script></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>注意\(</td>
+      <td>\bar{\vec{r}}</td>
+      <td>\)是市场固有的，我们无法改变，我们能改变的就是矢量\(\vec{p}\)，而Sharpe Ratio却只与其方向有关，且方向与\(\vec{\bar{r}}\)一致时，Sharpe Ratio最大。</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>这个优化问题是不是太trivial了。</p>
+
+<p>令最优投资组合为\(\vec{M}\) (M for Market)，则有\(\vec{M}=\lambda\bar{\vec{r}}\)，又因\(\vec{M}\cdot\vec{u}=\lambda\bar{\vec{r}}\cdot\vec{u}=1\)，故得到\(\lambda=1/(\bar{\vec{r}}\cdot\vec{u})\)。</p>
+
+<p>所以CAPM里最优投资组合是\(\vec{M}=\frac{1}{\bar{\vec{r}}\cdot\vec{u}}\bar{\vec{r}}\)。</p>
+
+<p>那么不买最优投资组合的代价是什么呢？</p>
+
+<p>任一投资组合\(\vec{p}\)可做分解\(\vec{p}=\frac{\vec{p}\cdot\vec{M}}{\vec{M}\cdot\vec{M}}\vec{M}+\vec{\epsilon}\)，其中\(\vec{\epsilon}\cdot\vec{M}=0\)。其收益也可做相应分解\(r_p=\beta_p r_M+\epsilon\)，ring a bell?</p>
+
+<p>其中\(\beta_p=\frac{\vec{p}\cdot\vec{M}}{\vec{M}\cdot\vec{M}}\)，\(r_M=\vec{M}\cdot\vec{r}\)是市场组合的收益率（市场收益率），\(\epsilon=\vec{\epsilon}\cdot\vec{r}\)便是所谓残差收益，注意到\(\bar{\epsilon}=\vec{\epsilon}\cdot\bar{\vec{r}}\propto\vec{\epsilon}\cdot\vec{M}=0\)，以及\(\mathrm{cov}(r_M,\epsilon)=\vec{M}\cdot\vec{\epsilon}=0\)解释一下就是任意投资组合的收益都可以分解为和市场完全相关与和市场无关（协方差为零，高级距暂不考虑）的两部分。与市场无关的部分是一个Martingale（滥用词汇啦），并且仅有买市场最优组合的时候这部分才等于零。</p>
+
+<p>所以按照CAPM理论，一个理性的人一定会买市场最优组合，市场上的所有资产也必须按照市场最优组合来分配，所有未按照市场最优组合来投资的人，除却其完全跟随市场的部分之外，在进行一场零和博弈，无故承担额外风险。</p>
+
+<p>这是非常消极的观点。我个人认为只适用于投资实业的决断，因为实业的利润率受市场资本流动的影响不是很大；相比之下金融市场的不确定因素太多，股价涨跌并不全是背后企业利润率的体现。</p>
+
+<p>Anyway，和经验公式\(r=\alpha+\beta r_M+\epsilon\)对比可知，CAPM认为对于任何投资组合，\(\alpha\)（除却市场相关部分和零和部分之后的一个固定收益）是等于零的，所以CAPM不建议购买除市场组合之外的任何其它组合。</p>
+
+<p>欢迎补充，我先吃个午饭去，写着好累，不确定以后还会不会写后续章节。。。</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Xavier&#39;s Personal Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Xavier&#39;s Personal Blog
+            
+            </li>
+            
+            <li><a href="mailto:xstereox@icloud.com, xingyh@itp.ac.cn">xstereox@icloud.com, xingyh@itp.ac.cn</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/xinstein"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">xinstein</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
