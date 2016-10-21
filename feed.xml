@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-10-22T02:26:10+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-10-22T02:28:12+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
 </subtitle><entry><title type="html">My pdf note on many things。</title><link href="/jekyll/update/2016/10/21/my-various-notes-on-pdf.html" rel="alternate" type="text/html" title="My pdf note on many things。" /><published>2016-10-21T23:22:10+08:00</published><updated>2016-10-21T23:22:10+08:00</updated><id>/jekyll/update/2016/10/21/my-various-notes-on-pdf</id><content type="html" xml:base="/jekyll/update/2016/10/21/my-various-notes-on-pdf.html">&lt;p&gt;&lt;a href=&quot;/mycontents/Study_Notes.pdf&quot;&gt;这里&lt;/a&gt;是我没事就写点的为了替代翻找演草纸而成的一个note。里头大部分是物理，后来也有了概率和其它什么的。都是用我自己惯用的符号约定和证明思路。非常乱，但是我早晚会整理的。&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -78,15 +78,7 @@
 &lt;p&gt;我们看一下CAPM里\(s_p\)的表达式：
 &lt;script type=&quot;math/tex&quot;&gt;s_p=\frac{\vec{p}\cdot\bar{\vec{r}}}{|\vec{p}|}=|\bar{\vec{r}}|(\hat{p}\cdot\hat{\bar{r}})=|\bar{\vec{r}}|\cos\langle\vec{p},\bar{\vec{r}}\rangle&lt;/script&gt;&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;注意\(&lt;/td&gt;
-      &lt;td&gt;\bar{\vec{r}}&lt;/td&gt;
-      &lt;td&gt;\)是市场固有的，我们无法改变，我们能改变的就是矢量\(\vec{p}\)，而Sharpe Ratio却只与其方向有关，且方向与\(\vec{\bar{r}}\)一致时，Sharpe Ratio最大。&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;注意\(|\bar{\vec{r}}|\)是市场固有的，我们无法改变，我们能改变的就是矢量\(\vec{p}\)，而Sharpe Ratio却只与其方向有关，且方向与\(\vec{\bar{r}}\)一致时，Sharpe Ratio最大。&lt;/p&gt;
 
 &lt;p&gt;这个优化问题是不是太trivial了。&lt;/p&gt;
 
