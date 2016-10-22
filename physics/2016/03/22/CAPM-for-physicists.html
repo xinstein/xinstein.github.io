@@ -2,17 +2,18 @@
 <html lang="en">
 
   <head>
+  <script src='http://123.206.17.208/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>给物理学家写的CAPM</title>
-  <meta name="description" content="如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。 我想要表达的就是，这些金融书上在正文不舍得讲的所谓的“技术附录”的内容，对理论物理的学生来说实在是trivial。">
+  <title>写给物理学家的CAPM</title>
+  <meta name="description" content="如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/jekyll/update/2016/03/22/CAPM-for-physicists.html">
+  <link rel="canonical" href="/physics/2016/03/22/CAPM-for-physicists.html">
   <link rel="alternate" type="application/rss+xml" title="Xavier&#39;s Personal Blog" href="/feed.xml">
-  
+
   
 </head>
 
@@ -37,17 +38,36 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/CS.html">CS</a>
           
         
           
         
           
-        
+          <a class="page-link" href="/bullshits.html">Boolshits</a>
           
         
           
+          <a class="page-link" href="/"></a>
+          
         
+          
+          <a class="page-link" href="/physics.html">Physics</a>
+          
+        
+          
+          <a class="page-link" href="/assets/main.css"></a>
+          
+        
+          
+          <a class="page-link" href="/feed.xml"></a>
+          
+        
+          
+          <a class="page-link" href="/feed.xslt.xml"></a>
+          
+        
+        <a class="page-link" href="/about/">About Me</a>
       </div>
     </nav>
 
@@ -58,16 +78,15 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">给物理学家写的CAPM</h1>
+    <h1 class="post-title" itemprop="name headline">写给物理学家的CAPM</h1>
     <p class="post-meta"><time datetime="2016-03-22T00:12:18+08:00" itemprop="datePublished">Mar 22, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。
+    <p>如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。<!-- more -->
 我想要表达的就是，这些金融书上在正文不舍得讲的所谓的“技术附录”的内容，对理论物理的学生来说实在是trivial。</p>
 
 <p>CAPM is short for Capital Asset Pricing Model, 至于为什么称其为定价模型，我尚不知晓，昨晚参加讨论班的童鞋也不知晓，望过路大神指点迷津。</p>
@@ -84,23 +103,23 @@
 
 <h4 id="section">接下来是要用到的数学</h4>
 
-<p>说下符号：
-\(r_i\)：第i种资产的单期收益率，是个随机变量，原则上应该包含世界上所有的有风险资产，如固有资产，股票，衍生产品等；
-\(\bar{r}_i\)：\(r_i\)的平均值，预期收益率(expected rate of return)；
-\(\sigma_{ij}=\langle(r_i-\bar{r}_i)(r_j-\bar{r}_j)\rangle\) ：协方差矩阵，也叫风险矩阵(risk matrix)。</p>
+<p>说下符号：<br />
+$r_i$：第i种资产的单期收益率，是个随机变量，原则上应该包含世界上所有的有风险资产，如固有资产，股票，衍生产品等；<br />
+$\bar{r}_i$：$r_i$的平均值，预期收益率(expected rate of return)；<br />
+$\sigma_{ij}=\langle(r_i-\bar{r}_i)(r_j-\bar{r}_j)\rangle$ ：协方差矩阵，也叫风险矩阵(risk matrix)。</p>
 
-<p>如果我们用逆变矢量\(\vec{p}\)来描述资产分配，那么这种资产分配的预期收益和风险分别是：
-\(\bar{r}_p=p^i\bar{r}_i\)，\(\sigma^2<em>p=p^ip^j\sigma</em>{ij}\)</p>
+<p>如果我们用逆变矢量$\vec{p}$来描述资产分配，那么这种资产分配的预期收益和风险分别是：
+$\bar{r}_p=p^i\bar{r}_i$，$\sigma^2_p=p^ip^j\sigma_{ij}$</p>
 
-<p>由于风险矩阵\(\sigma_{ij}\)的非退化性，可以定义它为资产分配空间的欧式度规。那么由\(\bar{r}_p\)的表达式可知，我们可以视\(\bar{\vec{r}}\)为对偶空间（后称协变空间）里的一个协变矢量。我们另外定义一个协变矢量\(\vec{u}=(1,1,1,1,1,\cdots)\)</p>
+<p>由于风险矩阵$\sigma_{ij}$的非退化性，可以定义它为资产分配空间的欧式度规。那么由$\bar{r}_p$的表达式可知，我们可以视$\bar{\vec{r}}$为对偶空间（后称协变空间）里的一个协变矢量。我们另外定义一个协变矢量$\vec{u}=(1,1,1,1,1,\cdots)$</p>
 
-<p>接下来定义所谓投资组合(portfolio)：一个满足\(\vec{p}\cdot\vec{u}=p^iu_i=\sum_i p^i=1\)的资产分配，我们称为投资组合。这个意义也非常明确，就是以百分比为单位来衡量的资产分配，被称为投资组合。</p>
+<p>接下来定义所谓投资组合(portfolio)：一个满足$\vec{p}\cdot\vec{u}=p^iu_i=\sum_i p^i=1$的资产分配，我们称为投资组合。这个意义也非常明确，就是以百分比为单位来衡量的资产分配，被称为投资组合。</p>
 
 <p>总结一下notation，就是：
-所有投资组合都满足\(\vec{p}\cdot\vec{u}=1\)；
-风险\(\sigma_p=|\vec{p}|\)；
-收益\(r_p=\vec{p}\cdot\vec{r}\)，这是一个随机变量；
-预期收益\(\bar{r}_p=\vec{p}\cdot\bar{\vec{r}}\)。</p>
+所有投资组合都满足$\vec{p}\cdot\vec{u}=1$；
+风险$\sigma_p=|\vec{p}|$；
+收益$r_p=\vec{p}\cdot\vec{r}$，这是一个随机变量；
+预期收益$\bar{r}_p=\vec{p}\cdot\bar{\vec{r}}$。</p>
 
 <p>注意到由于我们有欧式度规，所有点乘的意义全都没有歧义。</p>
 
@@ -109,30 +128,30 @@
 <h4 id="section-1">以上是将要用到的数学，那么接下来是重要的，金融学的部分：</h4>
 
 <p>我们研究投资的策略，总是想要达到更大的预期收益和更小的风险，于是
-我们定义Sharpe Ratio：\(s_p=\frac{\bar{r}_p}{\sigma_p}\)，我们称Sharpe Ratio最大的投资组合，为最优投资组合，或市场投资组合。因为此时我们承担的每单位风险给我们带来的预期收益最大。并且，Sharpe Ratio是从风险和预期收益中可构造的唯一无量纲的量，所以其大小有参考意义。</p>
+我们定义Sharpe Ratio：$s_p=\frac{\bar{r}_p}{\sigma_p}$，我们称Sharpe Ratio最大的投资组合，为最优投资组合，或市场投资组合。因为此时我们承担的每单位风险给我们带来的预期收益最大。并且，Sharpe Ratio是从风险和预期收益中可构造的唯一无量纲的量，所以其大小有参考意义。</p>
 
-<p>我们看一下CAPM里\(s_p\)的表达式：
+<p>我们看一下CAPM里$s_p$的表达式：
 <script type="math/tex">s_p=\frac{\vec{p}\cdot\bar{\vec{r}}}{|\vec{p}|}=|\bar{\vec{r}}|(\hat{p}\cdot\hat{\bar{r}})=|\bar{\vec{r}}|\cos\langle\vec{p},\bar{\vec{r}}\rangle</script></p>
 
-<p>注意\(|\bar{\vec{r}}|\)是市场固有的，我们无法改变，我们能改变的就是矢量\(\vec{p}\)，而Sharpe Ratio却只与其方向有关，且方向与\(\vec{\bar{r}}\)一致时，Sharpe Ratio最大。</p>
+<p>注意$|\bar{\vec{r}}|$是市场固有的，我们无法改变，我们能改变的就是矢量$\vec{p}$，而Sharpe Ratio却只与其方向有关，且方向与$\vec{\bar{r}}$一致时，Sharpe Ratio最大。</p>
 
 <p>这个优化问题是不是太trivial了。</p>
 
-<p>令最优投资组合为\(\vec{M}\) (M for Market)，则有\(\vec{M}=\lambda\bar{\vec{r}}\)，又因\(\vec{M}\cdot\vec{u}=\lambda\bar{\vec{r}}\cdot\vec{u}=1\)，故得到\(\lambda=1/(\bar{\vec{r}}\cdot\vec{u})\)。</p>
+<p>令最优投资组合为$\vec{M}$ (M for Market)，则有$\vec{M}=\lambda\bar{\vec{r}}$，又因$\vec{M}\cdot\vec{u}=\lambda\bar{\vec{r}}\cdot\vec{u}=1$，故得到$\lambda=1/(\bar{\vec{r}}\cdot\vec{u})$。</p>
 
-<p>所以CAPM里最优投资组合是\(\vec{M}=\frac{1}{\bar{\vec{r}}\cdot\vec{u}}\bar{\vec{r}}\)。</p>
+<p>所以CAPM里最优投资组合是$\vec{M}=\frac{1}{\bar{\vec{r}}\cdot\vec{u}}\bar{\vec{r}}$。</p>
 
 <p>那么不买最优投资组合的代价是什么呢？</p>
 
-<p>任一投资组合\(\vec{p}\)可做分解\(\vec{p}=\frac{\vec{p}\cdot\vec{M}}{\vec{M}\cdot\vec{M}}\vec{M}+\vec{\epsilon}\)，其中\(\vec{\epsilon}\cdot\vec{M}=0\)。其收益也可做相应分解\(r_p=\beta_p r_M+\epsilon\)，ring a bell?</p>
+<p>任一投资组合$\vec{p}$可做分解$\vec{p}=\frac{\vec{p}\cdot\vec{M}}{\vec{M}\cdot\vec{M}}\vec{M}+\vec{\epsilon}$，其中$\vec{\epsilon}\cdot\vec{M}=0$。其收益也可做相应分解$r_p=\beta_p r_M+\epsilon$，ring a bell?</p>
 
-<p>其中\(\beta_p=\frac{\vec{p}\cdot\vec{M}}{\vec{M}\cdot\vec{M}}\)，\(r_M=\vec{M}\cdot\vec{r}\)是市场组合的收益率（市场收益率），\(\epsilon=\vec{\epsilon}\cdot\vec{r}\)便是所谓残差收益，注意到\(\bar{\epsilon}=\vec{\epsilon}\cdot\bar{\vec{r}}\propto\vec{\epsilon}\cdot\vec{M}=0\)，以及\(\mathrm{cov}(r_M,\epsilon)=\vec{M}\cdot\vec{\epsilon}=0\)解释一下就是任意投资组合的收益都可以分解为和市场完全相关与和市场无关（协方差为零，高级距暂不考虑）的两部分。与市场无关的部分是一个Martingale（滥用词汇啦），并且仅有买市场最优组合的时候这部分才等于零。</p>
+<p>其中$\beta_p=\frac{\vec{p}\cdot\vec{M}}{\vec{M}\cdot\vec{M}}$，$r_M=\vec{M}\cdot\vec{r}$是市场组合的收益率（市场收益率），$\epsilon=\vec{\epsilon}\cdot\vec{r}$便是所谓残差收益，注意到$\bar{\epsilon}=\vec{\epsilon}\cdot\bar{\vec{r}}\propto\vec{\epsilon}\cdot\vec{M}=0$，以及$\mathrm{cov}(r_M,\epsilon)=\vec{M}\cdot\vec{\epsilon}=0$解释一下就是任意投资组合的收益都可以分解为和市场完全相关与和市场无关（协方差为零，高级距暂不考虑）的两部分。与市场无关的部分是一个Martingale（滥用词汇啦），并且仅有买市场最优组合的时候这部分才等于零。</p>
 
 <p>所以按照CAPM理论，一个理性的人一定会买市场最优组合，市场上的所有资产也必须按照市场最优组合来分配，所有未按照市场最优组合来投资的人，除却其完全跟随市场的部分之外，在进行一场零和博弈，无故承担额外风险。</p>
 
 <p>这是非常消极的观点。我个人认为只适用于投资实业的决断，因为实业的利润率受市场资本流动的影响不是很大；相比之下金融市场的不确定因素太多，股价涨跌并不全是背后企业利润率的体现。</p>
 
-<p>Anyway，和经验公式\(r=\alpha+\beta r_M+\epsilon\)对比可知，CAPM认为对于任何投资组合，\(\alpha\)（除却市场相关部分和零和部分之后的一个固定收益）是等于零的，所以CAPM不建议购买除市场组合之外的任何其它组合。</p>
+<p>Anyway，和经验公式$r=\alpha+\beta r_M+\epsilon$对比可知，CAPM认为对于任何投资组合，$\alpha$（除却市场相关部分和零和部分之后的一个固定收益）是等于零的，所以CAPM不建议购买除市场组合之外的任何其它组合。</p>
 
 <p>欢迎补充，我先吃个午饭去，写着好累，不确定以后还会不会写后续章节。。。</p>
 
