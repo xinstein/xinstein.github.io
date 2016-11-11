@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-11-11T13:49:26+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-11-11T13:53:29+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
 </subtitle><entry><title type="html">First Week at Mifi</title><link href="/csnotes/2016/11/11/newbie-at-mifi.html" rel="alternate" type="text/html" title="First Week at Mifi" /><published>2016-11-11T13:38:39+08:00</published><updated>2016-11-11T13:38:39+08:00</updated><id>/csnotes/2016/11/11/newbie-at-mifi</id><content type="html" xml:base="/csnotes/2016/11/11/newbie-at-mifi.html">&lt;p&gt;第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。&lt;!-- more --&gt;
 常用链接：&lt;/p&gt;
 
@@ -10,10 +10,10 @@
 
 &lt;p&gt;https://admin.jr.mi.com/#/report/overview(这个是什么我不知道啊？)&lt;/p&gt;
 
-&lt;p&gt;####spark本地测试必须语句
-sparkConf.setIfMissing(“spark.master”, “local[2]”)&lt;/p&gt;
+&lt;h2 id=&quot;spark&quot;&gt;spark本地测试必须语句&lt;/h2&gt;
+&lt;p&gt;sparkConf.setIfMissing(“spark.master”, “local[2]”)&lt;/p&gt;
 
-&lt;h4 id=&quot;rimpala-header&quot;&gt;Rimpala header：&lt;/h4&gt;
+&lt;h2 id=&quot;rimpala-header&quot;&gt;Rimpala header：&lt;/h2&gt;
 &lt;p&gt;library(rJava)
 require(rJava)
 library(RImpala)
@@ -25,14 +25,14 @@ rimpala.init()
 rimpala.connect(ip=”c3-hadoop-prc-ct01.bj”, port=”32404”)
 rimpala.usedatabase(“finance”)&lt;/p&gt;
 
-&lt;p&gt;####机群名称
-hd c3-miui-fi-admin00.bj&lt;/p&gt;
+&lt;h2 id=&quot;section&quot;&gt;机群名称&lt;/h2&gt;
+&lt;p&gt;hd c3-miui-fi-admin00.bj&lt;/p&gt;
 
-&lt;p&gt;######rstudio server
-hd lg-miui-fi-admin00.bj&lt;/p&gt;
+&lt;h4 id=&quot;rstudio-server&quot;&gt;rstudio server&lt;/h4&gt;
+&lt;p&gt;hd lg-miui-fi-admin00.bj&lt;/p&gt;
 
-&lt;p&gt;######tensorflow
-tj-hadoop-dl19.kscn
+&lt;h4 id=&quot;tensorflow&quot;&gt;tensorflow&lt;/h4&gt;
+&lt;p&gt;tj-hadoop-dl19.kscn
 tj-hadoop-dl35.kscn
 tj-hadoop-dl36.kscn&lt;/p&gt;
 

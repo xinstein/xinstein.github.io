@@ -97,10 +97,10 @@
 
 <p>https://admin.jr.mi.com/#/report/overview(这个是什么我不知道啊？)</p>
 
-<p>####spark本地测试必须语句
-sparkConf.setIfMissing(“spark.master”, “local[2]”)</p>
+<h2 id="spark">spark本地测试必须语句</h2>
+<p>sparkConf.setIfMissing(“spark.master”, “local[2]”)</p>
 
-<h4 id="rimpala-header">Rimpala header：</h4>
+<h2 id="rimpala-header">Rimpala header：</h2>
 <p>library(rJava)
 require(rJava)
 library(RImpala)
@@ -112,14 +112,14 @@ rimpala.init()
 rimpala.connect(ip=”c3-hadoop-prc-ct01.bj”, port=”32404”)
 rimpala.usedatabase(“finance”)</p>
 
-<p>####机群名称
-hd c3-miui-fi-admin00.bj</p>
+<h2 id="section">机群名称</h2>
+<p>hd c3-miui-fi-admin00.bj</p>
 
-<p>######rstudio server
-hd lg-miui-fi-admin00.bj</p>
+<h4 id="rstudio-server">rstudio server</h4>
+<p>hd lg-miui-fi-admin00.bj</p>
 
-<p>######tensorflow
-tj-hadoop-dl19.kscn
+<h4 id="tensorflow">tensorflow</h4>
+<p>tj-hadoop-dl19.kscn
 tj-hadoop-dl35.kscn
 tj-hadoop-dl36.kscn</p>
 
