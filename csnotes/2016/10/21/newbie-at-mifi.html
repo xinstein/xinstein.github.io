@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Xavier&#39;s Personal Blog</title>
-  <meta name="description" content="This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for th...">
+  <title>First Week at Mifi</title>
+  <meta name="description" content="第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/csnotes/2016/10/21/newbie-at-mifi.html">
   <link rel="alternate" type="application/rss+xml" title="Xavier&#39;s Personal Blog" href="/feed.xml">
 
   
@@ -78,85 +78,69 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">First Week at Mifi</h1>
+    <p class="post-meta"><time datetime="2016-10-21T23:22:10+08:00" itemprop="datePublished">Oct 21, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。<!-- more -->
+常用链接：</p>
+
+<p><a href="http://mifi-dw.d.xiaomi.net/sql_query/">DW数据库平台</a></p>
+
+<p><a href="http://data.micloud.d.xiaomi.net/dataanalysis?url=%2Fuser%2Fh_micloud_job%2Fbusiness%2Fuser_credit">HDFS查看</a></p>
+
+<p><a href="http://wiki.n.miui.com/pages/viewpage.action?pageId=23104794">重要数据在HDFS的路径</a></p>
+
+<p>https://admin.jr.mi.com/#/report/overview(这个是什么我不知道啊？)</p>
+
+<p>####spark本地测试必须语句
+sparkConf.setIfMissing(“spark.master”, “local[2]”)</p>
+
+<h4 id="rimpala-header">Rimpala header：</h4>
+<p>library(rJava)
+require(rJava)
+library(RImpala)
+require(RImpala)
+require(bit64)
+require(data.table)
+options(scipen = 200)
+rimpala.init()
+rimpala.connect(ip=”c3-hadoop-prc-ct01.bj”, port=”32404”)
+rimpala.usedatabase(“finance”)</p>
+
+<p>####机群名称
+hd c3-miui-fi-admin00.bj</p>
+
+<p>######rstudio server
+hd lg-miui-fi-admin00.bj</p>
+
+<p>######tensorflow
+tj-hadoop-dl19.kscn
+tj-hadoop-dl35.kscn
+tj-hadoop-dl36.kscn</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]){</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"what the f**k?"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="c1">//=&gt; prints 'I love you too' to STDOUT.</span></code></pre></figure>
+
+
+  </div>
 
   
-
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Oct 23, 2016, Category: pastlife</span>
-
-        <h2>
-          <a class="post-link" href="/pastlife/2016/10/23/newtons-laws.html">牛顿力学</a>
-        </h2>
-        <p>我计划写一系列的posts来祭奠我的理论物理生涯。当然也为了趁我还没有忘，赶紧记下我对物理学的那点认识，算是为了几十年后的自己准备的吧。大致是按物理学发展史的顺序，那么今天就从牛顿力学写起吧。注意我并不是写历史，恰恰相反我是写非常现代的观点和理解角度。</p>
-
-
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 21, 2016, Category: pastlife</span>
-
-        <h2>
-          <a class="post-link" href="/pastlife/2016/10/21/my-various-notes-on-pdf.html">My pdf note on many things.</a>
-        </h2>
-        <p><em><a href="/physics/contents/Study_Notes.pdf">这里</a></em> 是我没事就写点的为了替代翻找演草纸而成的一个note。</p>
-
-
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 21, 2016, Category: csnotes</span>
-
-        <h2>
-          <a class="post-link" href="/csnotes/2016/10/21/newbie-at-mifi.html">First Week at Mifi</a>
-        </h2>
-        <p>第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。</p>
-
-
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 21, 2016, Category: boolshit</span>
-
-        <h2>
-          <a class="post-link" href="/boolshit/2016/10/21/Migration-on-the-way.html">Migration On The Way!</a>
-        </h2>
-        <p>I recently plan to migrate all my previous study notes and works, personal thoughts and opinions here.</p>
-
-
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 21, 2016, Category: boolshit</span>
-
-        <h2>
-          <a class="post-link" href="/boolshit/2016/10/21/welcome-to-jekyll.html">Hello PostWorld!</a>
-        </h2>
-        
-
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 22, 2016, Category: pastlife</span>
-
-        <h2>
-          <a class="post-link" href="/pastlife/2016/03/22/CAPM-for-physicists.html">写给物理学家的CAPM</a>
-        </h2>
-        <p>如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。</p>
-
-
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </main>

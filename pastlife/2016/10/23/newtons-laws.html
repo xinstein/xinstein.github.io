@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <script src='http://123.206.17.208/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>牛顿力学</title>
+  <meta name="description" content="我计划写一系列的posts来祭奠我的理论物理生涯。当然也为了趁我还没有忘，赶紧记下我对物理学的那点认识，算是为了几十年后的自己准备的吧。大致是按物理学发展史的顺序，那么今天就从牛顿力学写起吧。注意我并不是写历史，恰恰相反我是写非常现代的观点和理解角度。">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/pastlife/2016/10/23/newtons-laws.html">
+  <link rel="alternate" type="application/rss+xml" title="Xavier&#39;s Personal Blog" href="/feed.xml">
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Xavier&#39;s Personal Blog</a>
+
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/CS.html">Career</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/bullshits.html">Boolshits</a>
+          
+        
+          
+          <a class="page-link" href="/"></a>
+          
+        
+          
+          <a class="page-link" href="/physics.html">Past Life</a>
+          
+        
+          
+          <a class="page-link" href="/assets/main.css"></a>
+          
+        
+          
+          <a class="page-link" href="/feed.xml"></a>
+          
+        
+          
+          <a class="page-link" href="/feed.xslt.xml"></a>
+          
+        
+        <a class="page-link" href="/about/">About Me</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">牛顿力学</h1>
+    <p class="post-meta"><time datetime="2016-10-23T23:03:39+08:00" itemprop="datePublished">Oct 23, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>我计划写一系列的posts来祭奠我的理论物理生涯。当然也为了趁我还没有忘，赶紧记下我对物理学的那点认识，算是为了几十年后的自己准备的吧。大致是按物理学发展史的顺序，那么今天就从牛顿力学写起吧。注意我并不是写历史，恰恰相反我是写非常现代的观点和理解角度。
+<!-- more --></p>
+
+<p><em>Please note that my view of physics is by no means the unique way of understanding. Every one has their own understanding of things, it’s the results and predictions that must come out the same. You can never verify if others have the same names for colors as you, but you’ll all agree that apples and cherries are of the same color.</em></p>
+
+<h4 id="section">用现代观点来概括，牛顿力学是满足伽利略相对性的<strong>唯一</strong>一种由二阶微分方程描述的质点运动定律。</h4>
+
+<p>如果你能秒懂我的一句话概括，那你就没必要看完下边的了，你一定是学理论物理的。<br />
+有人可能会觉得无聊，因为牛顿力学大家都熟悉，从初中就开始学了。然而量子场论又何尝不是，我们初中就学过光电效应吧。其实作为一个理论物理的学生，物理学我大概学了四遍，第一遍是初中学的，第二遍是高中学的，等到上大学了，再学一遍，到了研究生也不例外。每一遍学习都是从头到尾。所以牛顿力学我学了四遍。<br />
+就是这样，就算你熟知牛顿力学，甚至运用地得心应手，但你不一定从以上角度去审视过牛顿力学。理论物理跟普通物理不同就在于，我们不止关心“世界是怎样运转”，我们还关心“世界为什么这样运转？以别的方式运转行不行？”这样的问题。当然这样的问题自然不会有终极答案，但总是有partial answer可以追寻。正是对这样的问题做了严谨的思考，才使得爱因斯坦正确建立了狭义相对论（以后的post中会写到，狭义相对论是满足庞加莱相对性的唯一一种由二阶方程描述的质点运动定律）。很多爱好者不能正确理解狭义相对论，正是因为他并不具备跳到更高的角度去审视牛顿力学的能力，在不具备这种能力的情况下，牛顿力学掌握地越牢固，就越不可能理解狭义相对论。</p>
+
+<p><strong>伽利略相对性</strong>：<em>力学定律与自由观察者的方向，位置和运动速度无关。</em><br />
+也就是说，假设有多个封闭的船舱，船头朝着不同的方向，正在以不同的速度做自由平移运动，每个船舱里都有个牛顿，摆着相同的仪器，所有牛顿都产自同一生产线，并且都想通过做实验来确立物理定律，那么，他们将写下完全相同的牛顿三定律。并且他们无法通过任何力学实验的方法来测定自己船舱的朝向，位置以及运动速度。</p>
+
+<p>有趣的是，我们只需要知道这么多，并不需要做更多的实验，通过逻辑推理，在很少的假设下就可以唯一确定下来牛顿力学。</p>
+
+<p>我们的额外假设就是，<em>质点在任意时刻的状态由其位置和瞬时速度唯一决定。</em>“状态”一词，指的是我们为了确定其未来演化，而必须掌握的最少信息。这里就决定了，只要我们知道质点的速度和位置，我们就可以确定其整个未来的走向。<br />
+至于为什么要这样假设，我还没有完备的答案，当然有人去试图回答过这样的问题，得到了partial answer，他叫Ostrogradski。说这个的话就扯远了，我只说他得到的结论并不足以说明力学运动方程必须是二阶方程。</p>
+
+<p>接下来开始愉快的思想实验了。。。</p>
+
+<p>一个静止的自由质点，之后会怎么运动？答案很简单，由于力学规律与观察者的方向无关，所以本来静止的自由质点，必须保持静止下去。逻辑也很简单，考虑几个同样静止但船头朝着不同方向的船舱，这几位牛顿应该为这一问题给出相同的预言，所以只有一种可能性就是他们的预言是质点保持静止不动。<br />
+通俗地来讲，由于质点刚开始速度为零，没有指明任何方向，所以质点接下来不知道该往哪边走，只能保持静止。<br />
+换句话来讲，一个方程的对称性群，相交于所给定解条件（初始条件或边值条件）的对称性群，便是其解所满足的对称性群。<br />
+应用到这里，方程就是质点运动方程，满足伽利略对称性群（包含平移，转动，和伽利略时移）；定解条件就是质点的初始状态，一个点和一个零向量（速度），显然两者都在相对于这个点的转动下保持不变；那么解就是质点接下来的运动轨迹，一定满足前两者的交群，也就是关于这一点的转动群对称性，任何出了这一点的轨迹，都会破坏旋转对称性。</p>
+
+<p>一位哲人曾举过一个非常有趣的例子：一头左右完全对称的牛，以左右完全对称的方式前进，他的左前方和右前方完全对称地种植了绿油油的草场，但偏偏他的正前方是寸草不生。那么这头牛将不可避免地走向饿死的命运。</p>
+
+<p>接下来的思想实验大同小异：一个自由质点，最一般的运动轨迹是什么？刚才已经讨论过初始静止的质点，现在不失一般性地考虑初速度为$\vec{v}$的质点。</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]){</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"what the f**k?"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="c1">//=&gt; prints 'I love you too' to STDOUT.</span></code></pre></figure>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Xavier&#39;s Personal Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Xavier&#39;s Personal Blog
+            
+            </li>
+            
+            <li><a href="mailto:xstereox@icloud.com">xstereox@icloud.com</a></li>
+            
+            
+            <li><a href="mailto:xingyh@itp.ac.cn">xingyh@itp.ac.cn</a></li>
+            
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/xinstein"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">xinstein</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

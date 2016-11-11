@@ -1,9 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-10-23T01:54:26+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
-</subtitle><entry><title type="html">My pdf note on many things.</title><link href="/physics/2016/10/21/my-various-notes-on-pdf.html" rel="alternate" type="text/html" title="My pdf note on many things." /><published>2016-10-21T23:22:10+08:00</published><updated>2016-10-21T23:22:10+08:00</updated><id>/physics/2016/10/21/my-various-notes-on-pdf</id><content type="html" xml:base="/physics/2016/10/21/my-various-notes-on-pdf.html">&lt;p&gt;&lt;em&gt;&lt;a href=&quot;/physics/contents/Study_Notes.pdf&quot;&gt;这里&lt;/a&gt;&lt;/em&gt; 是我没事就写点的为了替代翻找演草纸而成的一个note。&lt;!-- more --&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-11-11T13:27:15+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
+</subtitle><entry><title type="html">牛顿力学</title><link href="/pastlife/2016/10/23/newtons-laws.html" rel="alternate" type="text/html" title="牛顿力学" /><published>2016-10-23T23:03:39+08:00</published><updated>2016-10-23T23:03:39+08:00</updated><id>/pastlife/2016/10/23/newtons-laws</id><content type="html" xml:base="/pastlife/2016/10/23/newtons-laws.html">&lt;p&gt;我计划写一系列的posts来祭奠我的理论物理生涯。当然也为了趁我还没有忘，赶紧记下我对物理学的那点认识，算是为了几十年后的自己准备的吧。大致是按物理学发展史的顺序，那么今天就从牛顿力学写起吧。注意我并不是写历史，恰恰相反我是写非常现代的观点和理解角度。
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Please note that my view of physics is by no means the unique way of understanding. Every one has their own understanding of things, it’s the results and predictions that must come out the same. You can never verify if others have the same names for colors as you, but you’ll all agree that apples and cherries are of the same color.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;用现代观点来概括，牛顿力学是满足伽利略相对性的&lt;strong&gt;唯一&lt;/strong&gt;一种由二阶微分方程描述的质点运动定律。&lt;/h4&gt;
+
+&lt;p&gt;如果你能秒懂我的一句话概括，那你就没必要看完下边的了，你一定是学理论物理的。&lt;br /&gt;
+有人可能会觉得无聊，因为牛顿力学大家都熟悉，从初中就开始学了。然而量子场论又何尝不是，我们初中就学过光电效应吧。其实作为一个理论物理的学生，物理学我大概学了四遍，第一遍是初中学的，第二遍是高中学的，等到上大学了，再学一遍，到了研究生也不例外。每一遍学习都是从头到尾。所以牛顿力学我学了四遍。&lt;br /&gt;
+就是这样，就算你熟知牛顿力学，甚至运用地得心应手，但你不一定从以上角度去审视过牛顿力学。理论物理跟普通物理不同就在于，我们不止关心“世界是怎样运转”，我们还关心“世界为什么这样运转？以别的方式运转行不行？”这样的问题。当然这样的问题自然不会有终极答案，但总是有partial answer可以追寻。正是对这样的问题做了严谨的思考，才使得爱因斯坦正确建立了狭义相对论（以后的post中会写到，狭义相对论是满足庞加莱相对性的唯一一种由二阶方程描述的质点运动定律）。很多爱好者不能正确理解狭义相对论，正是因为他并不具备跳到更高的角度去审视牛顿力学的能力，在不具备这种能力的情况下，牛顿力学掌握地越牢固，就越不可能理解狭义相对论。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;伽利略相对性&lt;/strong&gt;：&lt;em&gt;力学定律与自由观察者的方向，位置和运动速度无关。&lt;/em&gt;&lt;br /&gt;
+也就是说，假设有多个封闭的船舱，船头朝着不同的方向，正在以不同的速度做自由平移运动，每个船舱里都有个牛顿，摆着相同的仪器，所有牛顿都产自同一生产线，并且都想通过做实验来确立物理定律，那么，他们将写下完全相同的牛顿三定律。并且他们无法通过任何力学实验的方法来测定自己船舱的朝向，位置以及运动速度。&lt;/p&gt;
+
+&lt;p&gt;有趣的是，我们只需要知道这么多，并不需要做更多的实验，通过逻辑推理，在很少的假设下就可以唯一确定下来牛顿力学。&lt;/p&gt;
+
+&lt;p&gt;我们的额外假设就是，&lt;em&gt;质点在任意时刻的状态由其位置和瞬时速度唯一决定。&lt;/em&gt;“状态”一词，指的是我们为了确定其未来演化，而必须掌握的最少信息。这里就决定了，只要我们知道质点的速度和位置，我们就可以确定其整个未来的走向。&lt;br /&gt;
+至于为什么要这样假设，我还没有完备的答案，当然有人去试图回答过这样的问题，得到了partial answer，他叫Ostrogradski。说这个的话就扯远了，我只说他得到的结论并不足以说明力学运动方程必须是二阶方程。&lt;/p&gt;
+
+&lt;p&gt;接下来开始愉快的思想实验了。。。&lt;/p&gt;
+
+&lt;p&gt;一个静止的自由质点，之后会怎么运动？答案很简单，由于力学规律与观察者的方向无关，所以本来静止的自由质点，必须保持静止下去。逻辑也很简单，考虑几个同样静止但船头朝着不同方向的船舱，这几位牛顿应该为这一问题给出相同的预言，所以只有一种可能性就是他们的预言是质点保持静止不动。&lt;br /&gt;
+通俗地来讲，由于质点刚开始速度为零，没有指明任何方向，所以质点接下来不知道该往哪边走，只能保持静止。&lt;br /&gt;
+换句话来讲，一个方程的对称性群，相交于所给定解条件（初始条件或边值条件）的对称性群，便是其解所满足的对称性群。&lt;br /&gt;
+应用到这里，方程就是质点运动方程，满足伽利略对称性群（包含平移，转动，和伽利略时移）；定解条件就是质点的初始状态，一个点和一个零向量（速度），显然两者都在相对于这个点的转动下保持不变；那么解就是质点接下来的运动轨迹，一定满足前两者的交群，也就是关于这一点的转动群对称性，任何出了这一点的轨迹，都会破坏旋转对称性。&lt;/p&gt;
+
+&lt;p&gt;一位哲人曾举过一个非常有趣的例子：一头左右完全对称的牛，以左右完全对称的方式前进，他的左前方和右前方完全对称地种植了绿油油的草场，但偏偏他的正前方是寸草不生。那么这头牛将不可避免地走向饿死的命运。&lt;/p&gt;
+
+&lt;p&gt;接下来的思想实验大同小异：一个自由质点，最一般的运动轨迹是什么？刚才已经讨论过初始静止的质点，现在不失一般性地考虑初速度为$\vec{v}$的质点。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]){&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;what the f**k?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//=&amp;gt; prints 'I love you too' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><summary type="html">我计划写一系列的posts来祭奠我的理论物理生涯。当然也为了趁我还没有忘，赶紧记下我对物理学的那点认识，算是为了几十年后的自己准备的吧。大致是按物理学发展史的顺序，那么今天就从牛顿力学写起吧。注意我并不是写历史，恰恰相反我是写非常现代的观点和理解角度。</summary></entry><entry><title type="html">My pdf note on many things.</title><link href="/pastlife/2016/10/21/my-various-notes-on-pdf.html" rel="alternate" type="text/html" title="My pdf note on many things." /><published>2016-10-21T23:22:10+08:00</published><updated>2016-10-21T23:22:10+08:00</updated><id>/pastlife/2016/10/21/my-various-notes-on-pdf</id><content type="html" xml:base="/pastlife/2016/10/21/my-various-notes-on-pdf.html">&lt;p&gt;&lt;em&gt;&lt;a href=&quot;/physics/contents/Study_Notes.pdf&quot;&gt;这里&lt;/a&gt;&lt;/em&gt; 是我没事就写点的为了替代翻找演草纸而成的一个note。&lt;!-- more --&gt;
 里头大部分是物理，后来也有了概率和其它什么的。都是用我自己惯用的符号约定和证明思路&lt;sup id=&quot;fnref:wtf&quot;&gt;&lt;a href=&quot;#fn:wtf&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;br /&gt;
 非常乱，但是我早晚会整理的。&lt;br /&gt;
-前边部分还是按前后顺序写的，后来就每章都独立了。&lt;br /&gt;
-当时不知道写博客，只会写latex，早知道markdown这么好用我很可能就不用latex写note了。&lt;/p&gt;
+前边部分还是按前后顺序写的，后来就每章都独立了。以后应该会持续更新。&lt;/p&gt;
 
 &lt;p&gt;$\int_{-\infty}^{+\infty}dx\ \ \exp(\lambda e^{-ix} + \mu e^{ix}+i\cdot nx)$&lt;br /&gt;
 帮积个分谢谢🙏&lt;/p&gt;
@@ -27,7 +67,55 @@
       &lt;p&gt;发现错误请不吝告知 &lt;a href=&quot;#fnref:wtf&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><summary type="html">这里 是我没事就写点的为了替代翻找演草纸而成的一个note。</summary></entry><entry><title type="html">Migration On The Way!</title><link href="/boolshit/2016/10/21/Migration-on-the-way.html" rel="alternate" type="text/html" title="Migration On The Way!" /><published>2016-10-21T23:02:30+08:00</published><updated>2016-10-21T23:02:30+08:00</updated><id>/boolshit/2016/10/21/Migration-on-the-way</id><content type="html" xml:base="/boolshit/2016/10/21/Migration-on-the-way.html">&lt;p&gt;I recently plan to migrate all my previous study notes and works, personal thoughts and opinions here.
+&lt;/div&gt;</content><summary type="html">这里 是我没事就写点的为了替代翻找演草纸而成的一个note。</summary></entry><entry><title type="html">First Week at Mifi</title><link href="/csnotes/2016/10/21/newbie-at-mifi.html" rel="alternate" type="text/html" title="First Week at Mifi" /><published>2016-10-21T23:22:10+08:00</published><updated>2016-10-21T23:22:10+08:00</updated><id>/csnotes/2016/10/21/newbie-at-mifi</id><content type="html" xml:base="/csnotes/2016/10/21/newbie-at-mifi.html">&lt;p&gt;第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。&lt;!-- more --&gt;
+常用链接：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mifi-dw.d.xiaomi.net/sql_query/&quot;&gt;DW数据库平台&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://data.micloud.d.xiaomi.net/dataanalysis?url=%2Fuser%2Fh_micloud_job%2Fbusiness%2Fuser_credit&quot;&gt;HDFS查看&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wiki.n.miui.com/pages/viewpage.action?pageId=23104794&quot;&gt;重要数据在HDFS的路径&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;https://admin.jr.mi.com/#/report/overview(这个是什么我不知道啊？)&lt;/p&gt;
+
+&lt;p&gt;####spark本地测试必须语句
+sparkConf.setIfMissing(“spark.master”, “local[2]”)&lt;/p&gt;
+
+&lt;h4 id=&quot;rimpala-header&quot;&gt;Rimpala header：&lt;/h4&gt;
+&lt;p&gt;library(rJava)
+require(rJava)
+library(RImpala)
+require(RImpala)
+require(bit64)
+require(data.table)
+options(scipen = 200)
+rimpala.init()
+rimpala.connect(ip=”c3-hadoop-prc-ct01.bj”, port=”32404”)
+rimpala.usedatabase(“finance”)&lt;/p&gt;
+
+&lt;p&gt;####机群名称
+hd c3-miui-fi-admin00.bj&lt;/p&gt;
+
+&lt;p&gt;######rstudio server
+hd lg-miui-fi-admin00.bj&lt;/p&gt;
+
+&lt;p&gt;######tensorflow
+tj-hadoop-dl19.kscn
+tj-hadoop-dl35.kscn
+tj-hadoop-dl36.kscn&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]){&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;what the f**k?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//=&amp;gt; prints 'I love you too' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><summary type="html">第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。</summary></entry><entry><title type="html">Migration On The Way!</title><link href="/boolshit/2016/10/21/Migration-on-the-way.html" rel="alternate" type="text/html" title="Migration On The Way!" /><published>2016-10-21T23:02:30+08:00</published><updated>2016-10-21T23:02:30+08:00</updated><id>/boolshit/2016/10/21/Migration-on-the-way</id><content type="html" xml:base="/boolshit/2016/10/21/Migration-on-the-way.html">&lt;p&gt;I recently plan to migrate all my previous study notes and works, personal thoughts and opinions here.
 &lt;!-- more --&gt;
 业内人士告诉我说写博客可以帮助面试官更好地了解我，我觉得他说得有道理。所以我开始聚合了。&lt;/p&gt;
 
@@ -55,7 +143,7 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html"></summary></entry><entry><title type="html">写给物理学家的CAPM</title><link href="/physics/2016/03/22/CAPM-for-physicists.html" rel="alternate" type="text/html" title="写给物理学家的CAPM" /><published>2016-03-22T00:12:18+08:00</published><updated>2016-03-22T00:12:18+08:00</updated><id>/physics/2016/03/22/CAPM-for-physicists</id><content type="html" xml:base="/physics/2016/03/22/CAPM-for-physicists.html">&lt;p&gt;如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。&lt;!-- more --&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html"></summary></entry><entry><title type="html">写给物理学家的CAPM</title><link href="/pastlife/2016/03/22/CAPM-for-physicists.html" rel="alternate" type="text/html" title="写给物理学家的CAPM" /><published>2016-03-22T00:12:18+08:00</published><updated>2016-03-22T00:12:18+08:00</updated><id>/pastlife/2016/03/22/CAPM-for-physicists</id><content type="html" xml:base="/pastlife/2016/03/22/CAPM-for-physicists.html">&lt;p&gt;如下是昨晚讨论班的内容，发在这里吧！也鼓励大家以后也把讨论班内容整理成博文。&lt;!-- more --&gt;
 我想要表达的就是，这些金融书上在正文不舍得讲的所谓的“技术附录”的内容，对理论物理的学生来说实在是trivial。&lt;/p&gt;
 
 &lt;p&gt;CAPM is short for Capital Asset Pricing Model, 至于为什么称其为定价模型，我尚不知晓，昨晚参加讨论班的童鞋也不知晓，望过路大神指点迷津。&lt;/p&gt;
