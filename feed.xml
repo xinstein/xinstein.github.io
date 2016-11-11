@@ -1,5 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-11-11T13:27:15+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
-</subtitle><entry><title type="html">牛顿力学</title><link href="/pastlife/2016/10/23/newtons-laws.html" rel="alternate" type="text/html" title="牛顿力学" /><published>2016-10-23T23:03:39+08:00</published><updated>2016-10-23T23:03:39+08:00</updated><id>/pastlife/2016/10/23/newtons-laws</id><content type="html" xml:base="/pastlife/2016/10/23/newtons-laws.html">&lt;p&gt;我计划写一系列的posts来祭奠我的理论物理生涯。当然也为了趁我还没有忘，赶紧记下我对物理学的那点认识，算是为了几十年后的自己准备的吧。大致是按物理学发展史的顺序，那么今天就从牛顿力学写起吧。注意我并不是写历史，恰恰相反我是写非常现代的观点和理解角度。
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-11-11T13:49:26+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
+</subtitle><entry><title type="html">First Week at Mifi</title><link href="/csnotes/2016/11/11/newbie-at-mifi.html" rel="alternate" type="text/html" title="First Week at Mifi" /><published>2016-11-11T13:38:39+08:00</published><updated>2016-11-11T13:38:39+08:00</updated><id>/csnotes/2016/11/11/newbie-at-mifi</id><content type="html" xml:base="/csnotes/2016/11/11/newbie-at-mifi.html">&lt;p&gt;第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。&lt;!-- more --&gt;
+常用链接：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mifi-dw.d.xiaomi.net/sql_query/&quot;&gt;DW数据库平台&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://data.micloud.d.xiaomi.net/dataanalysis?url=%2Fuser%2Fh_micloud_job%2Fbusiness%2Fuser_credit&quot;&gt;HDFS查看&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wiki.n.miui.com/pages/viewpage.action?pageId=23104794&quot;&gt;重要数据在HDFS的路径&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;https://admin.jr.mi.com/#/report/overview(这个是什么我不知道啊？)&lt;/p&gt;
+
+&lt;p&gt;####spark本地测试必须语句
+sparkConf.setIfMissing(“spark.master”, “local[2]”)&lt;/p&gt;
+
+&lt;h4 id=&quot;rimpala-header&quot;&gt;Rimpala header：&lt;/h4&gt;
+&lt;p&gt;library(rJava)
+require(rJava)
+library(RImpala)
+require(RImpala)
+require(bit64)
+require(data.table)
+options(scipen = 200)
+rimpala.init()
+rimpala.connect(ip=”c3-hadoop-prc-ct01.bj”, port=”32404”)
+rimpala.usedatabase(“finance”)&lt;/p&gt;
+
+&lt;p&gt;####机群名称
+hd c3-miui-fi-admin00.bj&lt;/p&gt;
+
+&lt;p&gt;######rstudio server
+hd lg-miui-fi-admin00.bj&lt;/p&gt;
+
+&lt;p&gt;######tensorflow
+tj-hadoop-dl19.kscn
+tj-hadoop-dl35.kscn
+tj-hadoop-dl36.kscn&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]){&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;what the f**k?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//=&amp;gt; prints 'I love you too' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><summary type="html">第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。</summary></entry><entry><title type="html">牛顿力学</title><link href="/pastlife/2016/10/23/newtons-laws.html" rel="alternate" type="text/html" title="牛顿力学" /><published>2016-10-23T23:03:39+08:00</published><updated>2016-10-23T23:03:39+08:00</updated><id>/pastlife/2016/10/23/newtons-laws</id><content type="html" xml:base="/pastlife/2016/10/23/newtons-laws.html">&lt;p&gt;我计划写一系列的posts来祭奠我的理论物理生涯。当然也为了趁我还没有忘，赶紧记下我对物理学的那点认识，算是为了几十年后的自己准备的吧。大致是按物理学发展史的顺序，那么今天就从牛顿力学写起吧。注意我并不是写历史，恰恰相反我是写非常现代的观点和理解角度。
 &lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Please note that my view of physics is by no means the unique way of understanding. Every one has their own understanding of things, it’s the results and predictions that must come out the same. You can never verify if others have the same names for colors as you, but you’ll all agree that apples and cherries are of the same color.&lt;/em&gt;&lt;/p&gt;
@@ -67,55 +115,7 @@
       &lt;p&gt;发现错误请不吝告知 &lt;a href=&quot;#fnref:wtf&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><summary type="html">这里 是我没事就写点的为了替代翻找演草纸而成的一个note。</summary></entry><entry><title type="html">First Week at Mifi</title><link href="/csnotes/2016/10/21/newbie-at-mifi.html" rel="alternate" type="text/html" title="First Week at Mifi" /><published>2016-10-21T23:22:10+08:00</published><updated>2016-10-21T23:22:10+08:00</updated><id>/csnotes/2016/10/21/newbie-at-mifi</id><content type="html" xml:base="/csnotes/2016/10/21/newbie-at-mifi.html">&lt;p&gt;第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。&lt;!-- more --&gt;
-常用链接：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://mifi-dw.d.xiaomi.net/sql_query/&quot;&gt;DW数据库平台&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://data.micloud.d.xiaomi.net/dataanalysis?url=%2Fuser%2Fh_micloud_job%2Fbusiness%2Fuser_credit&quot;&gt;HDFS查看&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://wiki.n.miui.com/pages/viewpage.action?pageId=23104794&quot;&gt;重要数据在HDFS的路径&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;https://admin.jr.mi.com/#/report/overview(这个是什么我不知道啊？)&lt;/p&gt;
-
-&lt;p&gt;####spark本地测试必须语句
-sparkConf.setIfMissing(“spark.master”, “local[2]”)&lt;/p&gt;
-
-&lt;h4 id=&quot;rimpala-header&quot;&gt;Rimpala header：&lt;/h4&gt;
-&lt;p&gt;library(rJava)
-require(rJava)
-library(RImpala)
-require(RImpala)
-require(bit64)
-require(data.table)
-options(scipen = 200)
-rimpala.init()
-rimpala.connect(ip=”c3-hadoop-prc-ct01.bj”, port=”32404”)
-rimpala.usedatabase(“finance”)&lt;/p&gt;
-
-&lt;p&gt;####机群名称
-hd c3-miui-fi-admin00.bj&lt;/p&gt;
-
-&lt;p&gt;######rstudio server
-hd lg-miui-fi-admin00.bj&lt;/p&gt;
-
-&lt;p&gt;######tensorflow
-tj-hadoop-dl19.kscn
-tj-hadoop-dl35.kscn
-tj-hadoop-dl36.kscn&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;what the f**k?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//=&amp;gt; prints 'I love you too' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><summary type="html">第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。</summary></entry><entry><title type="html">Migration On The Way!</title><link href="/boolshit/2016/10/21/Migration-on-the-way.html" rel="alternate" type="text/html" title="Migration On The Way!" /><published>2016-10-21T23:02:30+08:00</published><updated>2016-10-21T23:02:30+08:00</updated><id>/boolshit/2016/10/21/Migration-on-the-way</id><content type="html" xml:base="/boolshit/2016/10/21/Migration-on-the-way.html">&lt;p&gt;I recently plan to migrate all my previous study notes and works, personal thoughts and opinions here.
+&lt;/div&gt;</content><summary type="html">这里 是我没事就写点的为了替代翻找演草纸而成的一个note。</summary></entry><entry><title type="html">Migration On The Way!</title><link href="/boolshit/2016/10/21/Migration-on-the-way.html" rel="alternate" type="text/html" title="Migration On The Way!" /><published>2016-10-21T23:02:30+08:00</published><updated>2016-10-21T23:02:30+08:00</updated><id>/boolshit/2016/10/21/Migration-on-the-way</id><content type="html" xml:base="/boolshit/2016/10/21/Migration-on-the-way.html">&lt;p&gt;I recently plan to migrate all my previous study notes and works, personal thoughts and opinions here.
 &lt;!-- more --&gt;
 业内人士告诉我说写博客可以帮助面试官更好地了解我，我觉得他说得有道理。所以我开始聚合了。&lt;/p&gt;
 
