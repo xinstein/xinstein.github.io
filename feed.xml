@@ -1,40 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-11-11T13:53:29+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
-</subtitle><entry><title type="html">First Week at Mifi</title><link href="/csnotes/2016/11/11/newbie-at-mifi.html" rel="alternate" type="text/html" title="First Week at Mifi" /><published>2016-11-11T13:38:39+08:00</published><updated>2016-11-11T13:38:39+08:00</updated><id>/csnotes/2016/11/11/newbie-at-mifi</id><content type="html" xml:base="/csnotes/2016/11/11/newbie-at-mifi.html">&lt;p&gt;第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。&lt;!-- more --&gt;
-常用链接：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-11-11T14:21:58+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
+</subtitle><entry><title type="html">First Week at Mifi</title><link href="/csnotes/2016/11/11/newbie-at-mifi.html" rel="alternate" type="text/html" title="First Week at Mifi" /><published>2016-11-11T13:38:39+08:00</published><updated>2016-11-11T13:38:39+08:00</updated><id>/csnotes/2016/11/11/newbie-at-mifi</id><content type="html" xml:base="/csnotes/2016/11/11/newbie-at-mifi.html">&lt;p&gt;第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。&lt;!-- more --&gt;&lt;/p&gt;
+&lt;h2 id=&quot;section&quot;&gt;&lt;strong&gt;常用链接&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://mifi-dw.d.xiaomi.net/sql_query/&quot;&gt;DW数据库平台&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mifi-dw.d.xiaomi.net/sql_query/&quot;&gt;DW数据库平台&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://data.micloud.d.xiaomi.net/dataanalysis?url=%2Fuser%2Fh_micloud_job%2Fbusiness%2Fuser_credit&quot;&gt;HDFS查看&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wiki.n.miui.com/pages/viewpage.action?pageId=23104794&quot;&gt;重要数据在HDFS的路径&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://collie.micloud.xiaomi.net/&quot;&gt;Collie平台&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;https://admin.jr.mi.com/#/report/overview(这个是什么我不知道啊？)  &lt;D-r&gt;&lt;/D-r&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://data.micloud.d.xiaomi.net/dataanalysis?url=%2Fuser%2Fh_micloud_job%2Fbusiness%2Fuser_credit&quot;&gt;HDFS查看&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;所有spark和mr任务都得在collie上运行，不能命令行提交（为了数据保密性）&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://wiki.n.miui.com/pages/viewpage.action?pageId=23104794&quot;&gt;重要数据在HDFS的路径&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;https://admin.jr.mi.com/#/report/overview(这个是什么我不知道啊？)&lt;/p&gt;
-
-&lt;h2 id=&quot;spark&quot;&gt;spark本地测试必须语句&lt;/h2&gt;
+&lt;h2 id=&quot;spark&quot;&gt;&lt;strong&gt;spark本地测试必须语句&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;sparkConf.setIfMissing(“spark.master”, “local[2]”)&lt;/p&gt;
 
-&lt;h2 id=&quot;rimpala-header&quot;&gt;Rimpala header：&lt;/h2&gt;
-&lt;p&gt;library(rJava)
-require(rJava)
-library(RImpala)
-require(RImpala)
-require(bit64)
-require(data.table)
-options(scipen = 200)
-rimpala.init()
-rimpala.connect(ip=”c3-hadoop-prc-ct01.bj”, port=”32404”)
+&lt;h2 id=&quot;rimpala-header&quot;&gt;&lt;strong&gt;Rimpala header&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;library(rJava)&lt;br /&gt;
+require(rJava)&lt;br /&gt;
+library(RImpala)&lt;br /&gt;
+require(RImpala)&lt;br /&gt;
+require(bit64)&lt;br /&gt;
+require(data.table)&lt;br /&gt;
+options(scipen = 200)&lt;br /&gt;
+rimpala.init()&lt;br /&gt;
+rimpala.connect(ip=”c3-hadoop-prc-ct01.bj”, port=”32404”)&lt;br /&gt;
 rimpala.usedatabase(“finance”)&lt;/p&gt;
 
-&lt;h2 id=&quot;section&quot;&gt;机群名称&lt;/h2&gt;
-&lt;p&gt;hd c3-miui-fi-admin00.bj&lt;/p&gt;
+&lt;h2 id=&quot;section-1&quot;&gt;&lt;strong&gt;机群名称&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;D-r&gt;hd c3-miui-fi-admin00.bj  
+&lt;/D-r&gt;
+  &lt;/li&gt;
+  &lt;li&gt;hd lg-miui-fi-admin00.bj   &lt;strong&gt;(rstudio server)&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;tj-hadoop-dl19.kscn   &lt;strong&gt;(tensorflow)&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;tj-hadoop-dl35.kscn   &lt;strong&gt;(tensorflow)&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;tj-hadoop-dl36.kscn   &lt;strong&gt;(tensorflow)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h4 id=&quot;rstudio-server&quot;&gt;rstudio server&lt;/h4&gt;
-&lt;p&gt;hd lg-miui-fi-admin00.bj&lt;/p&gt;
+&lt;h2 id=&quot;section-2&quot;&gt;代码仓库地址&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;git@git.n.xiaomi.com:wangxiaopeng/data_analysis_biz.git&quot;&gt;主代码仓库&lt;/a&gt;，所有的collie上的modules都是在这个仓库里。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;git@git.n.xiaomi.com:litai/mifi-nn.git&quot;&gt;李泰的tf代码仓库&lt;/a&gt;，tensorflow代码仓库。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;git@git.n.xiaomi.com:mifi-data/mifi-data.git&quot;&gt;变量库生成仓库&lt;/a&gt;，路卫杰维护。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;git@git.n.xiaomi.com:data-center/micloud-user-common.git&quot;&gt;git@git.n.xiaomi.com:data-center/micloud-user-common.git&lt;/a&gt;，不知道是什么，没用过&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h4 id=&quot;tensorflow&quot;&gt;tensorflow&lt;/h4&gt;
-&lt;p&gt;tj-hadoop-dl19.kscn
-tj-hadoop-dl35.kscn
-tj-hadoop-dl36.kscn&lt;/p&gt;
+&lt;p&gt;想要本地编译测试代码，需要把mifi-data项目mvn install，然后需要安装thrift0.5.0版本，然后便可编译data_analysis_biz下的模块。&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 

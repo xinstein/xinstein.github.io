@@ -86,42 +86,55 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。<!-- more -->
-常用链接：</p>
+    <p>第一周基本上没干什么实事儿，都在熟悉系统环境使用。一些链接和有用信息记在这里方便以后取用。<!-- more --></p>
+<h2 id="section"><strong>常用链接</strong></h2>
 
-<p><a href="http://mifi-dw.d.xiaomi.net/sql_query/">DW数据库平台</a></p>
+<ul>
+  <li><a href="http://mifi-dw.d.xiaomi.net/sql_query/">DW数据库平台</a></li>
+  <li><a href="http://data.micloud.d.xiaomi.net/dataanalysis?url=%2Fuser%2Fh_micloud_job%2Fbusiness%2Fuser_credit">HDFS查看</a></li>
+  <li><a href="http://wiki.n.miui.com/pages/viewpage.action?pageId=23104794">重要数据在HDFS的路径</a></li>
+  <li><a href="http://collie.micloud.xiaomi.net/">Collie平台</a></li>
+  <li>https://admin.jr.mi.com/#/report/overview(这个是什么我不知道啊？)  <D-r></D-r></li>
+</ul>
 
-<p><a href="http://data.micloud.d.xiaomi.net/dataanalysis?url=%2Fuser%2Fh_micloud_job%2Fbusiness%2Fuser_credit">HDFS查看</a></p>
+<p>所有spark和mr任务都得在collie上运行，不能命令行提交（为了数据保密性）</p>
 
-<p><a href="http://wiki.n.miui.com/pages/viewpage.action?pageId=23104794">重要数据在HDFS的路径</a></p>
-
-<p>https://admin.jr.mi.com/#/report/overview(这个是什么我不知道啊？)</p>
-
-<h2 id="spark">spark本地测试必须语句</h2>
+<h2 id="spark"><strong>spark本地测试必须语句</strong></h2>
 <p>sparkConf.setIfMissing(“spark.master”, “local[2]”)</p>
 
-<h2 id="rimpala-header">Rimpala header：</h2>
-<p>library(rJava)
-require(rJava)
-library(RImpala)
-require(RImpala)
-require(bit64)
-require(data.table)
-options(scipen = 200)
-rimpala.init()
-rimpala.connect(ip=”c3-hadoop-prc-ct01.bj”, port=”32404”)
+<h2 id="rimpala-header"><strong>Rimpala header</strong></h2>
+<p>library(rJava)<br />
+require(rJava)<br />
+library(RImpala)<br />
+require(RImpala)<br />
+require(bit64)<br />
+require(data.table)<br />
+options(scipen = 200)<br />
+rimpala.init()<br />
+rimpala.connect(ip=”c3-hadoop-prc-ct01.bj”, port=”32404”)<br />
 rimpala.usedatabase(“finance”)</p>
 
-<h2 id="section">机群名称</h2>
-<p>hd c3-miui-fi-admin00.bj</p>
+<h2 id="section-1"><strong>机群名称</strong></h2>
+<ul>
+  <li>
+    <D-r>hd c3-miui-fi-admin00.bj  
+</D-r>
+  </li>
+  <li>hd lg-miui-fi-admin00.bj   <strong>(rstudio server)</strong></li>
+  <li>tj-hadoop-dl19.kscn   <strong>(tensorflow)</strong></li>
+  <li>tj-hadoop-dl35.kscn   <strong>(tensorflow)</strong></li>
+  <li>tj-hadoop-dl36.kscn   <strong>(tensorflow)</strong></li>
+</ul>
 
-<h4 id="rstudio-server">rstudio server</h4>
-<p>hd lg-miui-fi-admin00.bj</p>
+<h2 id="section-2">代码仓库地址</h2>
+<ul>
+  <li><a href="git@git.n.xiaomi.com:wangxiaopeng/data_analysis_biz.git">主代码仓库</a>，所有的collie上的modules都是在这个仓库里。</li>
+  <li><a href="git@git.n.xiaomi.com:litai/mifi-nn.git">李泰的tf代码仓库</a>，tensorflow代码仓库。</li>
+  <li><a href="git@git.n.xiaomi.com:mifi-data/mifi-data.git">变量库生成仓库</a>，路卫杰维护。</li>
+  <li><a href="git@git.n.xiaomi.com:data-center/micloud-user-common.git">git@git.n.xiaomi.com:data-center/micloud-user-common.git</a>，不知道是什么，没用过</li>
+</ul>
 
-<h4 id="tensorflow">tensorflow</h4>
-<p>tj-hadoop-dl19.kscn
-tj-hadoop-dl35.kscn
-tj-hadoop-dl36.kscn</p>
+<p>想要本地编译测试代码，需要把mifi-data项目mvn install，然后需要安装thrift0.5.0版本，然后便可编译data_analysis_biz下的模块。</p>
 
 <p><br /></p>
 
