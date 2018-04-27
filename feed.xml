@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-12-02T22:37:53+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.5.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-27T09:35:39+08:00</updated><id>//</id><title type="html">Xavier’s Personal Blog</title><subtitle>This is my personal site which I use to store and display my own thoughts and mind notes. Use with caution because everyone has a different convention for things.
 </subtitle><entry><title type="html">牛顿力学</title><link href="/pastlife/2016/10/23/newtons-laws.html" rel="alternate" type="text/html" title="牛顿力学" /><published>2016-10-23T23:03:39+08:00</published><updated>2016-10-23T23:03:39+08:00</updated><id>/pastlife/2016/10/23/newtons-laws</id><content type="html" xml:base="/pastlife/2016/10/23/newtons-laws.html">&lt;p&gt;我计划写一系列的posts来祭奠我的理论物理生涯。当然也为了趁我还没有忘，赶紧记下我对物理学的那点认识，算是为了几十年后的自己准备的吧。大致是按物理学发展史的顺序，那么今天就从牛顿力学写起吧。注意我并不是写历史，恰恰相反我是写非常现代的观点和理解角度。
 &lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Please note that my view of physics is by no means the unique way of understanding. Every one has their own understanding of things, it’s the results and predictions that must come out the same. You can never verify if others have the same names for colors as you, but you’ll all agree that apples and cherries are of the same color.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;section&quot;&gt;用现代观点来概括，牛顿力学是满足伽利略相对性的&lt;strong&gt;唯一&lt;/strong&gt;一种由二阶微分方程描述的质点运动定律。&lt;/h4&gt;
+&lt;h4 id=&quot;用现代观点来概括牛顿力学是满足伽利略相对性的唯一一种由二阶微分方程描述的质点运动定律&quot;&gt;用现代观点来概括，牛顿力学是满足伽利略相对性的&lt;strong&gt;唯一&lt;/strong&gt;一种由二阶微分方程描述的质点运动定律。&lt;/h4&gt;
 
 &lt;p&gt;如果你能秒懂我的一句话概括，那你就没必要看完下边的了，你一定是学理论物理的。&lt;br /&gt;
 有人可能会觉得无聊，因为牛顿力学大家都熟悉，从初中就开始学了。然而量子场论又何尝不是，我们初中就学过光电效应吧。其实作为一个理论物理的学生，物理学我大概学了四遍，第一遍是初中学的，第二遍是高中学的，等到上大学了，再学一遍，到了研究生也不例外。每一遍学习都是从头到尾。所以牛顿力学我学了四遍。&lt;br /&gt;
@@ -64,7 +64,7 @@
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:wtf&quot;&gt;
-      &lt;p&gt;发现错误请不吝告知 &lt;a href=&quot;#fnref:wtf&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;发现错误请不吝告知&amp;nbsp;&lt;a href=&quot;#fnref:wtf&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><summary type="html">这里 是我没事就写点的为了替代翻找演草纸而成的一个note。</summary></entry><entry><title type="html">Migration On The Way!</title><link href="/boolshit/2016/10/21/Migration-on-the-way.html" rel="alternate" type="text/html" title="Migration On The Way!" /><published>2016-10-21T23:02:30+08:00</published><updated>2016-10-21T23:02:30+08:00</updated><id>/boolshit/2016/10/21/Migration-on-the-way</id><content type="html" xml:base="/boolshit/2016/10/21/Migration-on-the-way.html">&lt;p&gt;I recently plan to migrate all my previous study notes and works, personal thoughts and opinions here.
@@ -110,7 +110,7 @@
 
 &lt;p&gt;另外还有一预处理过程，就是改变资产衡量单位，将无风险资产的收益率调整为零。这并不是额外的假设。&lt;/p&gt;
 
-&lt;h4 id=&quot;section&quot;&gt;接下来是要用到的数学&lt;/h4&gt;
+&lt;h4 id=&quot;接下来是要用到的数学&quot;&gt;接下来是要用到的数学&lt;/h4&gt;
 
 &lt;p&gt;说下符号：&lt;br /&gt;
 $r_i$：第i种资产的单期收益率，是个随机变量，原则上应该包含世界上所有的有风险资产，如固有资产，股票，衍生产品等；&lt;br /&gt;
@@ -134,7 +134,7 @@ $\bar{r}_p=p^i\bar{r}_i$，$\sigma^2_p=p^ip^j\sigma_{ij}$&lt;/p&gt;
 
 &lt;p&gt;是不是超简单？&lt;/p&gt;
 
-&lt;h4 id=&quot;section-1&quot;&gt;以上是将要用到的数学，那么接下来是重要的，金融学的部分：&lt;/h4&gt;
+&lt;h4 id=&quot;以上是将要用到的数学那么接下来是重要的金融学的部分&quot;&gt;以上是将要用到的数学，那么接下来是重要的，金融学的部分：&lt;/h4&gt;
 
 &lt;p&gt;我们研究投资的策略，总是想要达到更大的预期收益和更小的风险，于是
 我们定义Sharpe Ratio：$s_p=\frac{\bar{r}_p}{\sigma_p}$，我们称Sharpe Ratio最大的投资组合，为最优投资组合，或市场投资组合。因为此时我们承担的每单位风险给我们带来的预期收益最大。并且，Sharpe Ratio是从风险和预期收益中可构造的唯一无量纲的量，所以其大小有参考意义。&lt;/p&gt;
